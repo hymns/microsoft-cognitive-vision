@@ -1,0 +1,26 @@
+{
+    "name": "hymns/microsoft-cognitive-vision",
+    "homepage": "https://github.com/hymns/microsoft-cognitive-vision",
+    "description": "PHP client library for Vision module in Microsoft Cognitive Services",
+    "keywords": ["microsoft", "cognitive", "vision", "api"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Hamizi Jaminan",
+            "homepage": "https://github.com/hymns"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/hymns/microsoft-cognitive-vision/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hymns\\MicrosoftCognitiveVision\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "php": ">=7.1"
+    }
+}
