@@ -4,7 +4,7 @@ namespace Hymns\MicrosoftCognitiveVision;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\RequestException;
-use Hymns\MicrosoftCognitiveFace\Model\Vision;
+use Hymns\MicrosoftCognitiveVision\Model\Vision;
 
 class Client
 {
