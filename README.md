@@ -1,4 +1,7 @@
 # Microsoft Cognitive Vision Service APIs Client Library for PHP #
+[![Latest Stable Version](https://poser.pugx.org/hymns/microsoft-cognitive-vision/v/stable)](https://packagist.org/packages/hymns/microsoft-cognitive-vision)
+[![Total Downloads](https://poser.pugx.org/hymns/microsoft-cognitive-vision/downloads)](https://packagist.org/packages/hymns/microsoft-cognitive-vision)
+[![License](https://poser.pugx.org/hymns/microsoft-cognitive-vision/license)](https://packagist.org/packages/hymns/microsoft-cognitive-vision)
 
 The cloud-based Vision API provides developers with access to advanced face algorithms. Microsoft Vision algorithms enable ocr attribute detection
 
