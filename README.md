@@ -3,7 +3,7 @@
 [![Total Downloads](https://poser.pugx.org/hymns/microsoft-cognitive-vision/downloads)](https://packagist.org/packages/hymns/microsoft-cognitive-vision)
 [![License](https://poser.pugx.org/hymns/microsoft-cognitive-vision/license)](https://packagist.org/packages/hymns/microsoft-cognitive-vision)
 
-The cloud-based Vision API provides developers with access to advanced face algorithms. Microsoft Vision algorithms enable ocr attribute detection
+The cloud-based Vision API provides developers with access to advanced image algorithms. Microsoft Vision algorithms enable OCR attribute detection.
 
 ## Requirements ##
 * [PHP 7.1.0 or higher](http://www.php.net/)
@@ -43,7 +43,7 @@ require_once '/path/to/microsoft-cognitive-vision/vendor/autoload.php';
 
 ## Examples ##
 
-### Analyze Example ###
+### Analyze Image ###
 
 ```php
 // include your composer dependencies
@@ -55,7 +55,7 @@ $vision  = $client->vision()->analyze('URL_IMAGE');
 print_r($vision);
 ```
 
-### Describe image ###
+### Describe Image ###
 
 ```php
 require_once 'vendor/autoload.php';
@@ -66,7 +66,7 @@ $vision  = $client->vision()->describe('URL_IMAGE');
 print_r($vision);
 ```
 
-### Optical Character Recognition ###
+### Optical Character Recognition (OCR) ###
 ```php
 require_once 'vendor/autoload.php';
 
