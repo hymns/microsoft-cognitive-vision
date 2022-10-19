@@ -7,14 +7,14 @@ use Hymns\MicrosoftCognitiveVision\Exception\ClientException;
 
 class Client
 {
-    private const BASE_URL = 'https://%s.api.cognitive.microsoft.com/vision/v2.0/';
+    private const BASE_URL = 'https://%s.cognitiveservices.azure.com/vision/%s/';
 
     private $guzzleClient;
 
-    public function __construct(string $key, string $region = 'australiaeast')
+    public function __construct(string $key, string $region = 'australiaeast', string $version = 'v3.2')
     {
         $this->guzzleClient = new \GuzzleHttp\Client([
-            'base_uri' => sprintf(self::BASE_URL, $region),
+            'base_uri' => sprintf(self::BASE_URL, $region, $version),
             'headers'  => [
                 'Ocp-Apim-Subscription-Key' => $key,
                 'Content-Type'              => 'application/json',
