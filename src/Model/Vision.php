@@ -15,11 +15,12 @@ class Vision extends Model
      * @param bool   $visualFeatures
      * @param bool   $details
      * @param string $language
+     * @param string $model
      *
      * @return mixed
      * @throws \Hymns\MicrosoftCognitiveVision\Exception\ClientException
      */
-    public function analyze(string $url = '', string $visualFeatures = null, string $details = null, string $language = 'en')
+    public function analyze(string $url = '', string $visualFeatures = null, string $details = null, string $language = 'en', $model = 'latest')
     {
         $parameters = [
             'url' => $url
@@ -28,7 +29,8 @@ class Vision extends Model
         $form_params = [
             'visualFeatures'  => $visualFeatures,
             'details'         => $details,
-            'language'        => $language
+            'language'        => $language,
+            'model-version'   => $model
         ];
 
         $response = $this->client->request('POST', 'analyze', $parameters, $form_params);
